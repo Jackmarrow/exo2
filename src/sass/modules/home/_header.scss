@@ -1,0 +1,107 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'Catamaran', sans-serif;
+}
+
+.container{
+   width:90vw;
+   max-width:1000px;
+}
+
+/* ------ navbar section ------ */
+.navbar{
+    background-color: $dark-blue;
+    display:flex;
+    justify-content:center;
+}
+
+.navbar-content{
+    display:flex;
+    justify-content: space-between;
+    align-items:center;
+    height:10vh;
+    font-weight:bold;
+
+    .logo{
+        color:$white;
+    }
+
+    .nav-item{
+        list-style:none;
+        display:flex;
+        gap:1rem;
+        a{
+            color:$light-gray;
+            text-decoration: none;
+            transition:color 500ms;
+
+            &:hover{
+                color:$white;
+                border-bottom:2px solid white;
+            }
+        }
+    }
+}
+
+/* ------ end of navbar section ------ */
+
+/* ------ hero section ------ */
+
+.hero-section{
+    background-color:$blue;
+    color:$white;
+    text-align:center;
+    height: 100vh - 10vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    .description{
+        h1{
+            font-size:2.2rem;
+            line-height:2.5rem;
+
+            @media(min-width:900px){
+                font-size:5rem;
+                line-height:4rem;
+            }
+        }
+
+        p{
+            font-weight:bold;
+            font-size:1.4rem;
+            margin-bottom:2rem;
+
+            @media(min-width:900px){
+                font-size:3rem;
+                line-height:6rem;
+            }
+        }
+        
+        .btn-learn-more{
+            color:$white;
+            letter-spacing:.1rem;
+            font-family: 'Catamaran', sans-serif;
+            padding:1.5em 3em;
+            font-size: .8rem;
+            border:none;
+            border-radius:2rem;
+            background-color:$dark-pink;
+            cursor:pointer;
+
+            &:hover{
+                box-shadow: 0 5px 15px  rgba(0, 0, 0, 0.5);
+            }
+            
+            @media(min-width:900px){
+                font-size: 1rem;
+            }
+        }
+    }
+}
+/* ------ end of hero section ------ */

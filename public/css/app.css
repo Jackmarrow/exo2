@@ -1,0 +1,199 @@
+/*------- project colors------*/ /*-------- fonts ------*/
+@font-face {
+  font-family: "Catamaran";
+  src: url("../../public/fonts/Catamaran-Regular.ttf");
+  font-weight: normal;
+}
+@font-face {
+  font-family: "Catamaran";
+  src: url("../../public/fonts/Catamaran-Bold.ttf");
+  font-weight: bold;
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Catamaran", sans-serif;
+}
+
+.container {
+  width: 90vw;
+  max-width: 1000px;
+}
+
+/* ------ navbar section ------ */
+.navbar {
+  background-color: #00004c;
+  display: flex;
+  justify-content: center;
+}
+
+.navbar-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 10vh;
+  font-weight: bold;
+}
+.navbar-content .logo {
+  color: white;
+}
+.navbar-content .nav-item {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+}
+.navbar-content .nav-item a {
+  color: #7e7ea5;
+  text-decoration: none;
+  transition: color 500ms;
+}
+.navbar-content .nav-item a:hover {
+  color: white;
+  border-bottom: 2px solid white;
+}
+
+/* ------ end of navbar section ------ */
+/* ------ hero section ------ */
+.hero-section {
+  background-color: #0000ff;
+  color: white;
+  text-align: center;
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.hero-section .description h1 {
+  font-size: 2.2rem;
+  line-height: 2.5rem;
+}
+@media (min-width: 900px) {
+  .hero-section .description h1 {
+    font-size: 5rem;
+    line-height: 4rem;
+  }
+}
+.hero-section .description p {
+  font-weight: bold;
+  font-size: 1.4rem;
+  margin-bottom: 2rem;
+}
+@media (min-width: 900px) {
+  .hero-section .description p {
+    font-size: 3rem;
+    line-height: 6rem;
+  }
+}
+.hero-section .description .btn-learn-more {
+  color: white;
+  letter-spacing: 0.1rem;
+  font-family: "Catamaran", sans-serif;
+  padding: 1.5em 3em;
+  font-size: 0.8rem;
+  border: none;
+  border-radius: 2rem;
+  background-color: #ee0979;
+  cursor: pointer;
+}
+.hero-section .description .btn-learn-more:hover {
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+}
+@media (min-width: 900px) {
+  .hero-section .description .btn-learn-more {
+    font-size: 1rem;
+  }
+}
+
+/* ------ end of hero section ------ */
+/* -------- info section --------*/
+.info {
+  padding: 4em 0;
+  display: flex;
+  justify-content: center;
+  /* ------ flip the position of image and text -----*/
+}
+.info .about-rock, .info .salut-you {
+  margin-bottom: 3rem;
+}
+@media (min-width: 900px) {
+  .info .about-rock, .info .salut-you {
+    margin-bottom: 5rem;
+  }
+}
+@media (min-width: 900px) {
+  .info .flip-ele {
+    flex-direction: row-reverse;
+  }
+}
+@media (min-width: 900px) {
+  .info .wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 7rem;
+    padding-inline: 1.5em;
+  }
+}
+.info .wrapper .image {
+  margin-bottom: 2rem;
+}
+@media (min-width: 900px) {
+  .info .wrapper .image {
+    flex: 1;
+    margin-bottom: 0;
+  }
+}
+.info .wrapper .image .event-img {
+  width: 100%;
+  border-radius: 50%;
+}
+@media (min-width: 500px) and (max-width: 899px) {
+  .info .wrapper .image .event-img {
+    width: 60%;
+    text-align: center;
+    display: block;
+    margin-inline: auto;
+  }
+}
+.info .wrapper .description {
+  color: #181d21;
+  text-align: center;
+}
+@media (min-width: 900px) {
+  .info .wrapper .description {
+    flex: 1;
+    text-align: left;
+  }
+}
+.info .wrapper .description h2 {
+  font-size: 2rem;
+}
+@media (min-width: 900px) {
+  .info .wrapper .description h2 {
+    font-size: 3.4rem;
+    line-height: 4.5rem;
+    margin-bottom: 1rem;
+  }
+}
+@media (min-width: 900px) {
+  .info .wrapper .description P {
+    line-height: 1.5rem;
+  }
+}
+
+/* -------- end of info section --------*/
+/* ------ footer section -----*/
+.footer {
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 2em;
+}
+
+/* ------ end of footer section -----*/
+
+/*# sourceMappingURL=app.css.map */
